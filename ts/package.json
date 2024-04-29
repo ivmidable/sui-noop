@@ -1,0 +1,31 @@
+{
+  "name": "noop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "noop": "ts-node ./noop.ts",
+    "airdrop": "ts-node ./scripts/airdrop.ts",
+    "check_airdrop": "ts-node ./scripts/check_airdrop.ts",
+    "keygen": "ts-node ./scripts/keygen.ts",
+    "publish": "ts-node ./scripts/publish.ts",
+    "upload": "ts-node ./scripts/upload.ts",
+    "upload_base": "ts-node ./scripts/upload_base.ts",
+    "tests": "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/*.ts"
+  },
+  "dependencies": {
+    "@mysten/sui.js": "^0.50.1",
+    "bs58": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "chai": "^5.0.3",
+    "mocha": "^10.3.0",
+    "prettier": "^3.2.5",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
